@@ -14,9 +14,9 @@ int main()
 
     for (int i = 0; i < employeeCount; i++)
     {
-        GetEmployeeInfo(employeeCount);
+        GetEmployeeInfo(i, employeeCount);
     }
-    eInfo[employeeCount] = *GetEmployeeInfo(employeeCount);
+    eInfo[employeeCount] = GetEmployeeInfo(i, employeeCount);
 
     std::cout << "\nPay Report\n----------\n";
 
